@@ -197,7 +197,7 @@ SELECT DISTINCT
 FROM spotify_data
 WHERE liveness > (SELECT AVG(liveness) FROM spotify_data);
 ```
-3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
+3. Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.
 ```sql
 WITH energy_category AS 
     (
